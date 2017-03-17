@@ -1,0 +1,53 @@
+
+.root{
+    -fx-background-image: url("background.jpg");
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-text-align:top;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.tooltip {
+    -fx-background-radius: 2 2 2 2;
+    -fx-background-color: linear-gradient(#FFFFFF, #DEDEDE);
+}
+.text {
+    -fx-font-size: 13px;
+    -fx-font-family: "fantasy";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.target {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button:hover{
+    -fx-background-color: linear-gradient(#2A5058,#61a2b1);
+    -fx-text-fill:#ffffff ;
+}
+
+.table-view .column-header
+{
+    -fx-background-color: #AAAAAA;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 2, 0.5, 1, 1);
+}
+.table-view .column-header .filter
+{
+    -fx-background-color: #AAAAAA;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 2, 0.5, 1, 1);
+}

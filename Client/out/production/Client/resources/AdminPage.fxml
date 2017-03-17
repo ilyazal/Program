@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="home_page" prefHeight="648.0" prefWidth="987.0" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.kyrs.GUI.adminPage.AdminPage">
+    <children>
+        <TableView fx:id="tables" layoutX="187.0" layoutY="18.0" prefHeight="154.0" prefWidth="772.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="called" prefWidth="139.0" text="Название" />
+                <TableColumn fx:id="material" minWidth="0.0" prefWidth="139.0" text="Вид" />
+                <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="119.0" text="Количество" />
+                <TableColumn fx:id="date" minWidth="0.0" prefWidth="117.0" text="Дата " />
+                <TableColumn fx:id="factory" minWidth="0.0" prefWidth="131.0" text="Компания" />
+            <TableColumn fx:id="money" prefWidth="75.0" text="Сумма $" />
+            </columns>
+        </TableView>
+      <TextField fx:id="delete_export" layoutX="231.0" layoutY="563.0" prefHeight="39.0" prefWidth="82.0" />
+      <Button layoutX="38.0" layoutY="563.0" mnemonicParsing="false" onAction="#deleteExport" prefHeight="39.0" prefWidth="176.0" text="Удалить Экспорт" />
+      <Button layoutX="729.0" layoutY="180.0" mnemonicParsing="false" onAction="#deleteImport" prefHeight="39.0" prefWidth="176.0" text="Удалить Импорт" />
+      <TextField fx:id="delete_import" layoutX="611.0" layoutY="180.0" prefHeight="39.0" prefWidth="82.0" />
+      <TableView fx:id="tables_exp" layoutX="18.0" layoutY="354.0" prefHeight="168.0" prefWidth="772.0">
+         <columns>
+            <TableColumn fx:id="ide" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="callede" prefWidth="136.0" text="Название" />
+            <TableColumn fx:id="materiale" minWidth="0.0" prefWidth="144.0" text="Вид" />
+            <TableColumn fx:id="quantitye" minWidth="0.0" prefWidth="114.0" text="Количество" />
+            <TableColumn fx:id="datee" minWidth="0.0" prefWidth="126.0" text="Дата" />
+            <TableColumn fx:id="factorye" prefWidth="121.0" text="Компания" />
+            <TableColumn fx:id="moneye" text="Сумма $" />
+         </columns>
+      </TableView>
+      <Label layoutX="869.0" layoutY="354.0" text="Экспорт" textAlignment="CENTER" />
+      <Label layoutX="71.0" layoutY="18.0" text="Импорт" textAlignment="CENTER" />
+
+      <TextField fx:id="calledi" layoutX="18.0" layoutY="45.0" />
+      <TextField fx:id="materiali" layoutX="18.0" layoutY="83.0" />
+      <TextField fx:id="quantityi" layoutX="18.0" layoutY="122.0" />
+      <TextField fx:id="factoryi" layoutX="18.0" layoutY="200.0" />
+      <TextField fx:id="moneyi" layoutX="18.0" layoutY="240.0" />
+        <DatePicker fx:id="date2i" layoutX="19.0" layoutY="160.0" prefHeight="25.0" prefWidth="149.0" />
+
+      <TextField fx:id="calledex" layoutX="817.0" layoutY="381.0" />
+      <TextField fx:id="materialex" layoutX="817.0" layoutY="420.0" />
+      <TextField fx:id="quantityex" layoutX="817.0" layoutY="458.0" />
+      <TextField fx:id="factoryex" layoutX="817.0" layoutY="531.0" />
+      <TextField fx:id="moneyex" layoutX="817.0" layoutY="570.0" />
+      <DatePicker fx:id="date2ex" layoutX="817.0" layoutY="497.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="37.0" layoutY="288.0" mnemonicParsing="false" onAction="#addImport" text="Добавить импорт" />
+      <Button layoutX="834.0" layoutY="609.0" mnemonicParsing="false" onAction="#addExport" text="Добавить экспорт" />
+
+    </children>
+</AnchorPane>

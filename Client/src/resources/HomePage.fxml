@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="home_page" prefHeight="761.0" prefWidth="1343.0" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsuir.kyrs.GUI.homePage.HomePage">
+   <children>
+      <TableView fx:id="tables" layoutX="89.0" layoutY="34.0" prefHeight="177.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="71.0" text="ID" />
+          <TableColumn fx:id="called" prefWidth="190.0" text="Название" />
+            <TableColumn fx:id="material" minWidth="0.0" prefWidth="84.0" text="Вид" />
+            <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="132.0" text="Количество" />
+            <TableColumn fx:id="date2" minWidth="0.0" prefWidth="165.0" text="Дата " />
+            <TableColumn fx:id="factory" minWidth="0.0" prefWidth="134.0" text="Компания" />
+            <TableColumn fx:id="monye" prefWidth="81.0" text="Сумма $" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tablexport" layoutX="89.0" layoutY="484.0" prefHeight="177.0" prefWidth="858.0">
+         <columns>
+            <TableColumn fx:id="ide" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="callede" prefWidth="191.0" text="Название" />
+            <TableColumn fx:id="materiale" minWidth="0.0" prefWidth="83.0" text="Материал" />
+            <TableColumn fx:id="quantitye" minWidth="0.0" prefWidth="130.0" text="Количество" />
+            <TableColumn fx:id="date2e" minWidth="0.0" prefWidth="162.0" text="Дата " />
+            <TableColumn fx:id="factory_exp" minWidth="0.0" prefWidth="142.0" text="Компания" />
+            <TableColumn fx:id="monye_exp" minWidth="0.0" prefWidth="72.0" text="Сумма $" />
+         </columns>
+      </TableView>
+      <Label layoutX="89.0" layoutY="224.0" prefHeight="27.0" prefWidth="103.0" text="Фильтрация:" />
+      <Button layoutX="373.0" layoutY="225.0" mnemonicParsing="false" onAction="#handlefilter" prefHeight="33.0" prefWidth="96.0" text="Фильтр" />
+      <TextField fx:id="filter_box" layoutX="189.0" layoutY="229.0" />
+      <Label fx:id="label_invalid" layoutX="483.0" layoutY="283.0" prefHeight="27.0" prefWidth="18.0" />
+      <TextField fx:id="filter_box_exp" layoutX="192.0" layoutY="677.0" />
+      <Label layoutX="89.0" layoutY="676.0" prefHeight="27.0" prefWidth="88.0" text="Фильтрация:" />
+      <Label fx:id="invalid_label_exp" layoutX="484.0" layoutY="532.0" prefHeight="27.0" prefWidth="122.0" />
+      <Button layoutX="382.0" layoutY="673.0" mnemonicParsing="false" onAction="#handlefilterexp" prefHeight="33.0" prefWidth="96.0" text="Фильтр" />
+      <Button layoutX="482.0" layoutY="225.0" mnemonicParsing="false" onAction="#updateimport" prefHeight="33.0" prefWidth="96.0" text="Обновить" />
+      <Button layoutX="490.0" layoutY="673.0" mnemonicParsing="false" onAction="#updateexport" prefHeight="33.0" prefWidth="96.0" text="Обновить" />
+      <Button layoutX="89.0" layoutY="283.0" mnemonicParsing="false" onAction="#analyze" prefHeight="33.0" prefWidth="96.0" text="Анализ" />
+      <Label fx:id="labanalyze" layoutX="89.0" layoutY="332.0" prefHeight="123.0" prefWidth="258.0" text="Анализ данных" />
+      <PieChart fx:id="analyzimp" layoutX="966.0" layoutY="34.0" prefHeight="265.0" prefWidth="341.0" title="График импорта" />
+      <PieChart fx:id="analyzexp" layoutX="972.0" layoutY="484.0" prefHeight="265.0" prefWidth="341.0" title="График экспорта" />
+      <Button layoutX="219.0" layoutY="283.0" mnemonicParsing="false" onAction="#charts" prefHeight="33.0" prefWidth="96.0" text="Графики" />
+      <Button layoutX="334.0" layoutY="283.0" mnemonicParsing="false" onAction="#saveAnalyze" prefHeight="33.0" prefWidth="96.0" text="Сохранить" />
+      <Label fx:id="savelabel" layoutX="450.0" layoutY="291.0" prefHeight="17.0" prefWidth="111.0" />
+   </children>
+</AnchorPane>
